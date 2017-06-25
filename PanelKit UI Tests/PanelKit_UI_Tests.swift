@@ -31,20 +31,20 @@ class PanelKit_UI_Tests: XCTestCase {
 
     func testFloating() {
 
-		XCUIDevice.shared().orientation = .landscapeLeft
+        XCUIDevice.shared.orientation = .landscapeLeft
 
-		let app = XCUIApplication()
-		let mapButton = app.navigationBars["PanelKit Example"].buttons["Map"]
-		let mapNavigationBar = app.navigationBars["Map"]
+        let app = XCUIApplication()
+        let mapButton = app.navigationBars["PanelKit Example"].buttons["Map"]
+        let mapNavigationBar = app.navigationBars["Map"]
 
-		mapButton.tap()
+        mapButton.tap()
 
-		mapNavigationBar.buttons["⬇︎"].tap()
+        mapNavigationBar.buttons["⬇︎"].tap()
 
-		let mapStaticText = mapNavigationBar.staticTexts["Map"]
-		mapStaticText.tap()
+        let mapStaticText = mapNavigationBar.staticTexts["Map"]
+        mapStaticText.tap()
 
-		mapNavigationBar.buttons["Close"].tap()
+        mapNavigationBar.buttons["Close"].tap()
 
     }
 
