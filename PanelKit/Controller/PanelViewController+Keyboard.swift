@@ -10,11 +10,11 @@ import UIKit
 
 extension PanelViewController {
 
-	func keyboardWillChangeFrame(_ notification: Notification) {
+	@objc func keyboardWillChangeFrame(_ notification: Notification) {
 
 	}
 
-	func willShowKeyboard(_ notification: Notification) {
+	@objc func willShowKeyboard(_ notification: Notification) {
 
 		guard let contentDelegate = contentDelegate else {
 			return
@@ -87,7 +87,7 @@ extension PanelViewController {
 
 	}
 
-	func willHideKeyboard(_ notification: Notification) {
+	@objc func willHideKeyboard(_ notification: Notification) {
 
 		guard let contentDelegate = contentDelegate else {
 			return
