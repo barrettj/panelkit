@@ -13,7 +13,7 @@ import UIKit
 	private var prevTouch: CGPoint?
 	public weak var panelViewController: PanelViewController?
 
-	var dragGestureRecognizer: UIPanGestureRecognizer?
+	public var dragGestureRecognizer: UIPanGestureRecognizer?
 
     override public func viewDidLoad() {
         super.viewDidLoad()
